@@ -21,7 +21,7 @@ api = Api(app, prefix=prefix, catch_all_404s=True)
 build_swagger_config_json()
 swaggerui_blueprint = get_swaggerui_blueprint(
     prefix,
-    f'http://{domain}:{port}{prefix}/swagger-config',
+    f'http://192.168.154.129:5000/swagger-config',
     config={
         'app_name': "Flask API",
         "layout": "BaseLayout",
